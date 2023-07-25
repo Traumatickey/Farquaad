@@ -1,0 +1,75 @@
+
+h1 {
+    color:rgb(255, 255, 255);
+    font-size: 3.5em;
+    font-weight:300;
+    text-align: center;
+    text-shadow: 6px 6px 4px rgb(0, 0, 0);
+    background-image:url(images/ciel.avif);
+    background-size:  cover;
+    background-position: top;
+    background-attachment:fixed;
+    padding: 150px;
+    opacity: 0.65;
+}
+h2 {
+    color:rgba(206, 181, 101,0.9);
+    font-size: 2.5em;
+    font-style:italic;
+}
+
+p{
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 3em;
+    color:rgb(58, 202, 171);
+}
+
+
+
+.ma-classe {
+    color:rgb(255, 0, 234);
+}
+
+.ma-classe-2 {
+    color:rgb(6, 219, 34);
+    font-weight: 900;
+
+}
+
+body {
+    background: linear-gradient(to right,#db2583,#7125db)
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+
+    background-image: url(images/bannière_f.jpg);
+
+    background-repeat: no-repeat;
+
+    background-position: center center;
+
+    background-size:cover;
+
+    background-size: contain;
+
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    border-radius:50% 50% 50% 50% / 5% 5% 95% 95% ;width:6em;height:8em;
+
+    border-color:rgb(38, 38, 139);
+
+    box-shadow:6px 6px 15px rgb(0, 0, 0);
+    
+}
+
+.shronk{
+width:20px;
+}

@@ -1,16 +1,19 @@
 
 h1 {
-    color:rgb(255, 255, 255);
-    font-size: 3.5em;
-    font-weight:300;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    text-shadow: 6px 6px 12px #000000;
     text-align: center;
-    text-shadow: 6px 6px 4px rgb(0, 0, 0);
-    background-image:url(images/ciel.avif);
-    background-size:  cover;
-    background-position: top;
-    background-attachment:fixed;
-    padding: 150px;
-    opacity: 0.65;
+    background-image: url(images/ciel.avif);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:30em;
+    opacity:0.7;
+    padding:150px;
+    border: 7px solid rgb(62, 27, 95);
+    border-radius: 90% 10% 90% 10% / 20% 80% 20% 80% ;
+
+    
 }
 h2 {
     color:rgba(206, 181, 101,0.9);
@@ -27,7 +30,7 @@ p{
 
 
 .ma-classe {
-    color:rgb(255, 0, 234);
+    color:rgb(88, 30, 84);
 }
 
 .ma-classe-2 {
@@ -37,7 +40,8 @@ p{
 }
 
 body {
-    background: linear-gradient(to right,#db2583,#7125db)
+    background: linear-gradient(to right,#db2583,#7125db);
+    background-attachment: fixed;
 }
 
 .logo {
@@ -70,6 +74,19 @@ body {
     
 }
 
-.shronk{
-width:20px;
+img {
+    width: 4em;
+    height: 5em;
+    position:absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
+    border:6px solid rgb(126, 89, 33);
+    box-shadow:6px 6px 15px rgb(0, 0, 0);
+    background-image:url(images/château.jpg);
+    background-position:bottom;
+    background-size: 8em;
+    background-repeat: no-repeat;
+
 }

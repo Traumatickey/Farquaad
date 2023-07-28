@@ -33,16 +33,41 @@ p{
     color:rgb(88, 30, 84);
 }
 
-.ma-classe-2 {
-    color:rgb(6, 219, 34);
+a:hover {
+    opacity: 0.5;
+    color:#000000;
+    text-decoration:underline;
+    
+}
+
+a:active {
+    text-decoration-color: azure;
+}
+
+a {
+text-decoration:none;
+color:rgb(243, 255, 130);
     font-weight: 900;
 
 }
+
+a:focus {
+    background-color:#db2583;
+    color:aqua;
+    outline-color: blueviolet;
+    box-shadow:6px 6px 15px rgb(0, 0, 0);
+    opacity:0.9;
+
+}
+
+
 
 body {
     background: linear-gradient(to right,#db2583,#7125db);
     background-attachment: fixed;
 }
+
+
 
 .logo {
     width: 150px;
@@ -89,4 +114,8 @@ img {
     background-size: 8em;
     background-repeat: no-repeat;
 
+}
+
+img:hover {
+    opacity: 0.9;
 }

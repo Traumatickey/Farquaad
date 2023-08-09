@@ -7,11 +7,12 @@ h1 {
     background-image: url(images/ciel.avif);
     background-attachment: fixed;
     background-repeat:no-repeat;
-    background-size:30em;
+    background-size:100%;
     opacity:0.7;
     padding:150px;
     border: 7px solid rgb(62, 27, 95);
     border-radius: 90% 10% 90% 10% / 20% 80% 20% 80% ;
+    margin:auto;
 
     
 }
@@ -19,6 +20,7 @@ h2 {
     color:rgba(206, 181, 101,0.9);
     font-size: 2.5em;
     font-style:italic;
+    margin: 50px;
 }
 
 p{
@@ -113,6 +115,7 @@ img {
     background-position:bottom;
     background-size: 8em;
     background-repeat: no-repeat;
+    
 
 }
 

@@ -51,7 +51,9 @@ img {
 img:hover {
     opacity :0.7;
     box-shadow: 6px 6px 15px #000014;
+    border-radius: 15px;
 }
+
 
 
 
@@ -95,4 +97,58 @@ body {
 .element3 {
     display:flex;
     flex-direction: row;
+}
+
+.menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to right,#7e7e7e,#2600ff);
+    background-attachment: fixed;
+    border-top: 6px solid #ffffff;
+    border-left: 6px solid #555252;
+    border-right: 6px solid #555252;
+    border-bottom: 6px solid #ffffff;
+    
+}
+
+.emplacement1 {
+    order: 1;
+
+}
+
+.emplacement2 {
+    order: 2;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip:hover::before{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.image_petit {
+height: 5em;
+width: 5em;
+;
 }

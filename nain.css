@@ -72,9 +72,66 @@ strong {
 
 
 body {
-    background: linear-gradient(to right,#000014,#320a44);
+    background: linear-gradient(to right,#3a3a3f,#431d77);
 
 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+ul li a {
+    display: inline-block;
+    width: 10em;
+    height: 5em;
+    line-height: 5em;
+    border: 7px solid rgb(100, 100, 100);
+    border-radius: 20px;
+    background: linear-gradient(45deg,#7a7a78,#ffffff);
+    box-shadow: 6px 6px 15px rgb(0,0,0,0.5);
+    text-decoration: none;
+    text-align: center;
+    color:#616161;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+ul li a:focus {     
+    color:rgb(43, 252, 154);
+    outline-color: rgb(199, 140, 255);
+    border-radius: 10px;
+    box-shadow:6px 6px 15px rgb(0, 0, 0);
+    opacity:0.9;
+}
+
+ul li a:hover {
+    opacity: 0.5;
+}
+
+ul li a:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+ul li a::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .container {
@@ -129,15 +186,17 @@ body {
 .tooltip::before {
     content: attr(data-tooltip);
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 10px;
+    font-size: 12px;
     white-space: nowrap;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.2s, visibility 0.2s;
+    transition: opacity 0.2s, visibility 0.8s;
+    margin-left: 25px;
+    text-align: center;
 }
 
 .tooltip:hover::before{

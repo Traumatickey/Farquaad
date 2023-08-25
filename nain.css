@@ -79,11 +79,13 @@ body {
 
 ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
     gap: 20px;
-    flex-wrap: wrap;
+
 }
+
 
 ul li a {
     display: inline-block;

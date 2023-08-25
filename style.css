@@ -36,9 +36,8 @@ p{
 }
 
 a:hover {
-    opacity: 0.5;
+    opacity: 0.7;
     color:#000000;
-    text-decoration:underline;
     
 }
 
@@ -61,6 +60,49 @@ a:focus {
     opacity:0.9;
 
 }
+
+nav a {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 11.5em;
+    background: linear-gradient(to left,#2e9c97,#521717);
+    background-attachment: fixed;
+    border-radius: 20px;
+    box-shadow: 6px 6px 15px rgb(0, 0, 0);
+    
+}
+
+nav a p {
+    color: #fff;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    font-size: 4em;
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 1s ease;
+    
+
+}
+
+nav a p:hover {
+    text-decoration: none;
+    transform:rotate(360deg);
+    transition-delay: 1s;
+
+}
+
+@keyframes colorChange {
+    0% { color: rgb(255, 0, 0); }
+    25% { color: rgb(132, 0, 255); }
+    50% { color: rgb(187, 255, 0); }
+    75% { color: rgb(4, 0, 255); }
+    100% { color: rgb(255, 0, 0); }
+  }
+
+.animate-color-change:hover {
+    animation: colorChange 5s infinite;
+}
+
 
 
 
@@ -101,24 +143,57 @@ body {
     
 }
 
-img {
-    width: 4em;
-    height: 5em;
-    position:absolute;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius:50% 50% 50% 50% / 50% 50% 50% 50%;
-    border:6px solid rgb(126, 89, 33);
-    box-shadow:6px 6px 15px rgb(0, 0, 0);
-    background-image:url(images/château.jpg);
-    background-position:bottom;
-    background-size: 8em;
-    background-repeat: no-repeat;
-    
+a img {
+    border:6px solid #000000;
+    border-radius: 30%;
+    height: 8em;
+    width: 6em;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+a img:hover {
+    transform: matrix(0, 1, 1, 0, 0, 0);
+    transition-delay: 0.3s;
 
 }
 
-img:hover {
-    opacity: 0.9;
+
+.conteneur {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 245px 300px 180px;
+    gap: 20px;
 }
+.box {
+    border: 6px solid #c4c4c4;
+    border-radius: 20px;
+    background: linear-gradient(45deg,#b9d84a,#fff);
+    padding: 20px;
+}
+
+.two {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.four {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.seven {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.eight {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+

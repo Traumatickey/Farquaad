@@ -91,6 +91,7 @@ nav a p:hover {
 
 }
 
+
 @keyframes colorChange {
     0% { color: rgb(255, 0, 0); }
     25% { color: rgb(132, 0, 255); }
@@ -111,6 +112,20 @@ body {
     background-attachment: fixed;
 }
 
+p[class=intelligence] {
+    font-size: 2.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#17c952;
+}
+
+select {
+    width: 15em;
+    height: 2em;
+    border: 3px solid #17c952;
+    border-radius: 10px;
+    background-color:#472c2c;
+    color:#17c952;
+}
 
 
 .logo {
@@ -196,4 +211,5 @@ a img:hover {
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
